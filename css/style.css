@@ -5,7 +5,7 @@ html {
 
 body{
     font-family: 'Montserrat';
-    background-color: white;
+    background-color: #002201;
 }
 
 .main-container{
@@ -740,4 +740,5 @@ body{
     right: 40px;
     z-index: 9999;
 }
+
 
