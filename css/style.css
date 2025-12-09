@@ -10,7 +10,7 @@ body{
 
 .main-container{
     width: 1920px;
-    background-color: white;
+    background-color: #002201;
     margin: 40px auto;
     height: auto;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 1);
@@ -740,3 +740,4 @@ body{
     right: 40px;
     z-index: 9999;
 }
+
