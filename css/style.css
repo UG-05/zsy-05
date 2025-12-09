@@ -1,0 +1,742 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: 'Montserrat';
+    background-color: white;
+}
+
+.main-container{
+    width: 1920px;
+    background-color: white;
+    margin: 40px auto;
+    height: auto;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 1);
+    position: relative;
+}
+
+.header {
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+    background-color: #183319;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1920px; /* если у тебя фиксированный макет — оставляем */
+    z-index: 1000;
+}
+
+
+.header-img{
+    height: 120px;
+    width: 120px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.header-text-zsy{
+    width: 99px;
+    height: 56px;
+    margin-left: 24px;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: normal;
+    font-style: italic;
+    color: #18881B;
+}
+
+.header-text-zsy-05{
+    width: 99px;
+    height: 56px;
+    margin-left: 12px;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: normal;
+    font-style: italic;
+    color: #C71BBB;
+}
+
+.header-ul{
+    display:flex;
+    flex-direction: row;
+    margin-left: 200px;
+    margin-top: 66px;
+    list-style: none;
+}
+
+.header-text-ul{
+    color: #fff;
+    font-size: 24px;
+    margin-right: 60px;
+}
+
+.golovna {
+    height: 1100px;
+    background-image: url(img/glav.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 200px; /* ← смещение вниз всех элементов */
+}
+
+.golovna-btn {
+    margin-top: 0; /* ← убираем коллапсирующий отступ */
+}
+
+
+.golovna-btn{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    height: 88px;
+    border-radius: 30px;
+    background-color: #18881B;
+    border-color: #0F6011;
+    border-width: 3px;
+    border-style: solid;
+    margin-left: 710px;
+    margin-top: 0;
+}
+
+.golovna-btn-img{
+    height: 60px;
+    width: 60px;
+    margin-top: 14px;
+    margin-left: 30px;
+}
+
+.golovna-btn-text{
+    font-family: 'Montserrat';
+    color: #fff;
+    font-size: 24px;
+    margin-left: 32px;
+    margin-top: 24px;
+}
+
+.golovna-text{
+    font-family: 'Montserrat';
+    color: #18881B;
+    font-size: 48px;
+    text-align: center;
+    margin-top: 70px;
+    font-weight: 900;
+}
+
+.golovna-text-mel{
+    font-family: 'Montserrat';
+    color: #C71BBB;
+    font-size: 48px;
+    text-align: center;
+    margin-top: 70px;
+    font-weight: 600;
+}
+
+.golovna-text-text{
+    font-family: 'Montserrat';
+    color: #fff;
+    font-size: 24px;
+    margin-top: 456px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.golovna-btn{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    height: 88px;
+    border-radius: 30px;
+    background-color: #18881B;
+    border-color: #0F6011;
+    border-width: 3px;
+    border-style: solid;
+    margin-left: 710px;
+    margin-top: 0;
+}
+
+.golovna-btn-img{
+    height: 60px;
+    width: 60px;
+    margin-top: 14px;
+    margin-left: 30px;
+}
+
+.golovna-btn-text{
+    font-family: 'Montserrat';
+    color: #fff;
+    font-size: 24px;
+    margin-left: 32px;
+    margin-top: 24px;
+}
+
+/* Затемняем фон */
+.golovna::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* 40% затемнение */
+    z-index: 1;
+}
+
+/* Делаем контент ярким поверх затемнения */
+.golovna > * {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+
+
+.for-us{
+    height: 700px;
+    background-color: #183319;
+    margin-top: -40px;
+
+}
+
+.for_us_h1{
+    font-family: 'Montserrat';
+    color: #18881B;
+    font-size: 48px;
+    text-align: center;
+    font-weight: 900;
+    line-height: normal;
+    font-style: italic;
+    padding-top: 80px;
+}
+
+.for-us-text{
+    font-family: 'Montserrat';
+    color: #00E808;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+    line-height: normal;
+    font-style: italic;
+    margin-top: 40px;
+    margin-bottom: 64px;
+}
+
+.for-us-mel{
+    font-family: 'Montserrat';
+    color: #fff;
+    font-size: 24px;
+    text-align: left;
+    font-weight: 600;
+    line-height: normal;
+    font-style: italic;
+    margin-top: 200px;
+    margin-left: 120px;
+}
+
+
+
+
+.pidrozdil{
+    height: 2200px;
+    background-image: url(img/plats.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.pidrozdil-h1{
+    font-family: 'Montserrat';
+    color: #18881B;
+    font-size: 48px;
+    text-align: center;
+    font-weight: 900;
+    line-height: normal;
+    font-style: italic;
+
+}
+
+.pidrozdil-text{
+    font-family: 'Montserrat';
+    color: #00E808;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+    line-height: normal;
+    font-style: italic;
+}
+
+.pidrozdil-glav{
+    flex-direction: row;
+    display: flex;
+    margin-top: 80px;
+}
+
+.pidrozdil-card{
+    width: 800px;
+    height: 480px;
+    background-color: #004802;
+    border-radius: 30px;
+    border-color: #0F6011;
+    border-width: 5px;
+    border-style: solid;
+    margin-left: 96px;
+    margin-right: 100px;
+
+}
+
+.pidrozdil-card-img-text{
+    flex-direction: row;
+    display: flex;
+}
+
+.pidrozdil-card-img{
+    width: 140px;
+    height: 140px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.pidrozdil-card-text{
+    font-size: 24px;
+    color: #07BC0D;
+    margin-left: 200px;
+    margin-top: 60px;
+    line-height: normal;
+    font-style: italic;
+}
+
+.pidrozdil-card-text-two{
+    font-size: 20px;
+    color: #00E808;
+    margin-left: 40px;
+    margin-top: 24px;
+    line-height: normal;
+    font-style: italic;
+}
+
+.pidrozdil-card-kyr{
+    font-size: 24px;
+    color: #00E808;
+    margin-left: 40px;
+    margin-top: 80px;
+    line-height: normal;
+    font-style: italic;
+}
+
+
+
+
+
+.Kerivnitstvo{
+    height: 1300px;
+    background-color: #183319;
+    margin-top: -40px;
+}
+
+.Kerivnitstvo-card-glav{
+    flex-direction: row;
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.Kerivnitstvo-card{
+    width: 352px;
+    height: 364px;
+    background-image: url(img/piksel.png);
+    margin-right: 80px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    color: #fff; /* светлый текст */
+}
+
+.Kerivnitstvo-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4); /* затемнение картинки */
+    z-index: 1;
+}
+
+.Kerivnitstvo-card * {
+    position: relative;
+    z-index: 2; /* текст поверх затемнения */
+}
+
+
+
+.Kerivnitstvo-img{
+    width: 360px;
+    height: auto;
+    
+}
+
+.Kerivnitstvo-h1{
+    font-size: 24px;
+    color: #07BC0D;
+    line-height: normal;
+    font-style: italic;
+    margin-left: 40px;
+}
+
+.Kerivnitstvo-p{
+    font-size: 24px;
+    color: #00E808;
+    line-height: normal;
+    font-style: italic;
+    margin-left: 40px;
+}
+
+
+
+
+.vumoga{
+    height: 1600px;
+    background-image: url(img/vishka.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+
+.vumoga-h{
+    font-family: 'Montserrat';
+    color: #18881B;
+    font-size: 48px;
+    text-align: center;
+    font-weight: 900;
+    line-height: normal;
+    font-style: italic;
+    padding-top: 80px;
+}
+
+.vumoga-p{
+    font-family: 'Montserrat';
+    color: #00E808;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+    line-height: normal;
+    font-style: italic;
+    margin-top: 40px;
+    margin-bottom: 64px;
+}
+
+.vumoga-block{
+    width: 1600px;
+    height: 200px;
+    background-color: #004802;
+    border-radius: 30px;
+    border-color: #0F6011;
+    border-width: 5px;
+    border-style: solid;
+    margin-left: 130px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 48px;
+}
+
+.vumoga-img{
+    width: 120px;
+    height: 120px;
+    margin-left: 60px;
+    margin-top: 40px;
+}
+
+.vumoga-ul-h{
+    font-size: 30px;
+    color: #07BC0D;
+    line-height: normal;
+    font-style: italic;
+    margin-left: 200px;
+}
+
+.vumoga-ul-p{
+    font-size: 24px;
+    color: #00E808;
+    line-height: normal;
+    font-style: italic;
+    margin-left: 200px;
+}
+
+
+.zvanna{
+    height: 1400px;
+    background-color: #183319;
+    margin-top: -40px;
+}
+
+.zvanna-h{
+    font-family: 'Montserrat';
+    color: #18881B;
+    font-size: 48px;
+    text-align: center;
+    font-weight: 900;
+    line-height: normal;
+    font-style: italic;
+    padding-top: 80px;
+}
+
+.zvanna-flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.zvanna-block{
+    width: 600px;
+    height: 88px;
+    background-color: #00C005;
+    border-radius: 30px;
+    border-color: #0F6011;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.zvanna-p{
+    font-family: 'Montserrat';
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 900;
+    line-height: normal;
+    font-style: italic;
+}
+
+.zvanna-p-1{
+    font-family: 'Montserrat';
+    color: #FF9500;
+    font-size: 24px;
+    text-align: left;
+    font-weight: 900;
+    line-height: normal;
+    font-style: italic;
+    margin-left: 20px;
+}
+
+.zvanna-p-2{
+    font-family: 'Montserrat';
+    color: #000DFF;
+    font-size: 24px;
+    text-align: left;
+    font-weight: 900;
+    line-height: normal;
+    font-style: italic;
+    margin-left: 20px;
+}
+
+.zvanna-p-3{
+    font-family: 'Montserrat';
+    color: #00EEFF;
+    font-size: 24px;
+    text-align: left;
+    font-weight: 900;
+    line-height: normal;
+    font-style: italic;
+    margin-left: 20px;
+}
+
+.zvanna-p-4{
+    font-family: 'Montserrat';
+    color: #C71BBB;
+    font-size: 24px;
+    text-align: left;
+    font-weight: 900;
+    line-height: normal;
+    font-style: italic;
+    margin-left: 20px;
+}
+
+.zvanna-div-div{
+    display: flex;
+    flex-direction: row;
+}
+
+.zvanna-div{
+    margin-left: 240px;
+    margin-top: 150px;
+}
+
+.zvanna-block-block{
+    width: 1500px;
+    height: 88px;
+    background-color: #006603;
+    border-radius: 30px;
+    border-color: #3A773C;
+    border-width: 5px;
+    border-style: solid;
+    margin-left: 220px;
+    margin-top: 54px;
+}
+
+.zvanna-div-flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.zvanna-block-3{
+    width: 700px;
+    height: 88px;
+    background-color: #00C005;
+    border-radius: 30px;
+    border-color: #0F6011;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.zvanna-p-5{
+    font-family: 'Montserrat';
+    color: #7300FF;
+    font-size: 24px;
+    text-align: left;
+    font-weight: 900;
+    line-height: normal;
+    font-style: italic;
+    margin-left: 20px;
+}
+
+.zvanna-p-6{
+    font-family: 'Montserrat';
+    color: #EEFF00;
+    font-size: 24px;
+    text-align: left;
+    font-weight: 900;
+    line-height: normal;
+    font-style: italic;
+    margin-left: 20px;
+}
+
+
+
+
+.galerea{
+    height: 1000px;
+    background-color: #183319;
+    margin-top: -40px;
+}
+
+.galerea-h{
+    font-family: 'Montserrat';
+    color: #18881B;
+    font-size: 48px;
+    text-align: center;
+    font-weight: 900;
+    line-height: normal;
+    font-style: italic;
+    padding-top: 80px;
+}
+
+.galerea-div{
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+    margin-right: 60px;
+}
+
+.galerea-img{
+    width: 500px;
+    height: auto;
+    border-radius: 30px;
+    margin-right: 60px;
+    margin-top: 32px;
+    margin-bottom: 60px;
+}
+
+
+
+
+
+
+/* From Uiverse.io by vinodjangid07 */ 
+.button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.svgIcon {
+  width: 20px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.button:hover {
+  width: 200px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: #0F6011;
+  align-items: center;
+}
+
+.button:hover .svgIcon {
+  /* width: 20px; */
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+
+.button::before {
+  position: absolute;
+  bottom: -20px;
+  content: "Наверх";   /* 🔥 изменено */
+  color: white;
+  font-size: 0px;
+}
+
+.button:hover::before {
+  font-size: 18px;
+  opacity: 1;
+  bottom: unset;
+  transition-duration: 0.3s;
+}
+
+.button {
+    position: fixed; /* если хочешь, чтобы она всегда была видимой */
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+}
+
+
+.button {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+
+}
+
+.a {
+    text-decoration: none;
+}
+
+.button {
+    position: fixed !important; /* фиксированная кнопка */
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+}
